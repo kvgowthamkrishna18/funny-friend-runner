@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MaDDALO GAME😂</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">MANA CHINNA GAADI GOLA</p>
+        <h1>Maddalo Game 😂</h1>
+        <p class="subtitle">Guddha muskoni addam vasthe jump chey lekapothe run</p>
+      </div>
+      <div class="score-card">
+        <span>BEST SCORE</span>
+        <strong id="bestScore">0</strong>
+      </div>
+    </header>
+
+    <section class="game-panel">
+      <div class="hud">
+        <span> SCORE: <b id="score">0</b></span>
+        <span> LEVEL: <b id="level">1</b></span>
+        <button id="soundBtn" class="small-btn" type="button">🔊 Music: OFF</button>
+      </div>
+
+      <div class="stage-wrap">
+        <canvas id="game" width="900" height="420" aria-label="Funny endless runner game"></canvas>
+        <div class="overlay" id="overlay">
+          <div class="overlay-card">
+            <div class="big-emoji">🤣</div>
+            <h2 id="overlayTitle">Ready ah ra puka?</h2>
+            <p id="overlayText">Addam vasthe jump chey(Created by KV Gowtham krishna)</p>
+            <button id="startBtn" class="main-btn" type="button">START MADDALO GAME</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <p><b>Keyboard:</b> SPACE / ↑ to jump</p>
+        <p><b>Phone:</b> Tap the game area to jump</p>
+        <button id="jumpBtn" class="jump-btn" type="button">JUMP 🤸</button>
+      </div>
+    </section>
+
+    <footer>Made for friendly fun only. Keep the jokes fun and make sure your friend is okay with being in the game. ❤️</footer>
+  </main>
+
+  <audio id="bgMusic" src="telugu-song.mp3" loop preload="auto"></audio>
+  <script src="game.js"></script>
+</body>
+</html>
